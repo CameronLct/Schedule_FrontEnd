@@ -1,0 +1,124 @@
+.schedule {
+    display: flex;
+    flex-direction: row;
+    height: 85vh;
+    width: 70vw;
+    min-height: 500px;
+    min-width: 800px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f3f8f6;
+    border-radius: 20px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    border-left: rgba(194, 194, 194, 0.33) 1px solid;
+    border-right: rgba(194, 194, 194, 0.33) 1px solid;
+    width: 200px;
+    height: 100%;
+}
+
+.day h3 {
+    color: #8b8b8b;
+    margin: 0;
+    height: 5%;
+}
+
+.hours {
+    width: 30px;
+    height: 90%;
+    color: #8b8b8b;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+
+.arrow {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #a0a0a0;
+    border-right: 2px solid #a0a0a0;
+    margin: 50px;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+}
+
+.list-meetings {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.timerange {
+    height: 12.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.meeting {
+    margin-top: 30px;
+    width: 90%;
+    height: 90%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.09);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meeting p {
+    font-weight: 500;
+    margin: 5px;
+    font-size: 13px;
+}
+
+
+.arrow-right {
+    transform: rotate(45deg);
+}
+
+.arrow-left {
+    transform: rotate(-135deg);
+}
+
+.circle {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(44, 108, 128);
+    cursor: pointer;
+    animation-duration: 500ms;
+}
+
+.circle:hover {
+    transform: scale(1.05);
+}
+
+.circle::before {
+    content: "+";
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: courier;
+    color: white;
+}
